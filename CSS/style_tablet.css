@@ -1,0 +1,64 @@
+@media screen and (max-width: 1200px) {
+    
+    footer h3 {
+        margin: 20px 0;
+        text-align: left;
+        font-size: 20px;
+        line-height: 46px;
+    }
+
+    footer button {
+        height: 40px;
+        width: max-content;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 0 25px;
+        border-radius: 5px;
+        color: #fff;
+        background: rgb(177, 12, 12);
+        letter-spacing: 0.04em;
+    }
+
+.footerButton{
+    justify-content: flex-end;
+}
+
+.footerContacts{
+    flex-direction: column;
+}
+
+.menu{
+    display: none;
+}
+
+.menuActiv{
+    position: absolute;
+    flex-flow: column nowrap;
+    width: 160px;
+    height: 160px;
+    top: 120px;
+    right: 0;
+    align-items: flex-end;
+    padding: 0 40px;
+}
+
+.menu a{
+    color: black;
+}
+
+.hamburger{
+    display: flex;
+}
+
+.hamb{
+    width: 40px;
+    height: 40px;
+    background-image: url(../Img/hamburgerWhite.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    cursor: pointer;
+    }
+    
+
+}

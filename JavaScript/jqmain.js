@@ -8,8 +8,8 @@ $(function(){
         }
     });
 
+    openHamb();
 /*dropmenuClick();
-displaySize();
 gataka();
 writeTable();
 

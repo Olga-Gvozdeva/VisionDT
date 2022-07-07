@@ -113,11 +113,9 @@ main{
 
 }
 
-
-
-
-
-
+.hamburger{
+    display: none;
+}
 
 
 footer {
@@ -162,6 +160,7 @@ footer p {
 
 .footerContacts {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
     margin-top: 15px;
     align-items: center;

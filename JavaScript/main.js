@@ -376,3 +376,12 @@ function accStore(main, title){
 }
 
 */
+
+function openHamb(){
+    let hamb = document.querySelector('.hamb');
+    let openmenu = document.querySelector('.menu');
+
+    hamb.addEventListener('click', function(){
+        openmenu.classList.toggle('menuActiv');
+    })
+}
