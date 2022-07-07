@@ -1,3 +1,4 @@
+/*
 const russMonth = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 let gamma = [];
 let basket = document.querySelector('.basket');
@@ -246,18 +247,6 @@ function makeCalendar(fieldDate) {
     curyear = hlpdate.getFullYear();
     curmonth = hlpdate.getMonth();
     curday = hlpdate.getDate();
-
-/*
-    if (fieldDate.match(/^\d{2}\-\d{2}\-\d{4}$/)) {
-        [curday, curmonth, curyear] = fieldDate.split('-');
-        curmonth--;
-        if ((curday < 1) || (curmonth < 0) || (curyear < 2020) || (curmonth > 11) || (curyear > 2023) || (curday > 31) || ((curmonth in [3, 5, 8, 10]) && (curday > 30)) || ((curmonth == 1) && ((curyear % 400 == 0) || ((curyear % 4 == 0) && (curyear % 100 != 0))) && (curday > 29)) || ((curmonth == 1) && (curday > 28))) {
-            curyear = now.getFullYear();
-            curmonth = now.getMonth();
-            curday = now.getDate();
-        }
-    }
-  */  
    
     hlpdate = new Date(curyear, curmonth);
     let prevdays = ((hlpdate.getDay() + 6) % 7); // пн - 0, вт - 1 ... сб - 5, вс - 6
@@ -383,5 +372,14 @@ function accStore(main, title){
 
     buttonClick.addEventListener('click', function(){
         titleText.classList.toggle('activeTitle');
+    })
+}
+
+*/
+
+function scrollMain(){
+    document.addEventListener("scroll", function(){
+        let headerCont = document.querySelector('.headerContainer');
+        headerCont.style.opacity = '0.6';
     })
 }

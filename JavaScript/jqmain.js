@@ -1,7 +1,7 @@
 $(function(){
 
-accordeon();
-dropmenuClick();
+scrollMain()
+/*dropmenuClick();
 displaySize();
 gataka();
 writeTable();
@@ -71,6 +71,6 @@ $('.item').click(function(){
 
 $('.person').click(function(){
     lightboxperson(this);
-});
+});  */
 
 });
