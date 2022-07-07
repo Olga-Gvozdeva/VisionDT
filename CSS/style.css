@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'ImpasseRegular';
+    src: url(../Fonts/impasse-webfont.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ImpasseBold';
+    src: url(../Fonts/impassebold-webfont.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html, body, body div, span, label, h1, h2, h3, h4, h5, h6, p, a, em, font, img, s, small, strike, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, button, form, fieldset, article, aside, footer, header, nav, section, input, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    list-style: none;
+    text-decoration: none;
+
+}
+       
+html * {
+    max-height: 1000000px;
+}
+   
+html,  body {
+    height: 100%;
+    min-width: 315px;
+}
+
+body {
+    font: normal 400 16px / 26px 'ImpasseRegular', 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header{
+    background-color: black;
+    box-shadow: 5px 10px 20px #b5af86;
+    width: 100%;
+}
+
+.headerContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin: 6px auto;
+    height: 95px;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url(../Img/logoTextWhite.png);
+    background-size: contain;
+    background-position: center left 40px;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+}
+
+.menu, .socialMedia{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 300px;
+    font-size: 18px;
+}
+
+.menu a{
+    color: white;
+}
+
+.socialMedia{
+    margin-left: 40px;
+    width: 150px;
+}
+.socialMedia a{
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.vk{
+    background-image: url(../Img/VK_white.png);
+}
+
+.instagram{
+    background-image: url(../Img/Instagram_white.png);
+}
+
+.telegram{
+    background-image: url(../Img/Telegram_white.png);
+}
+main{
+    margin: 50px auto;
+    flex: 1 0 auto;
+
+}
