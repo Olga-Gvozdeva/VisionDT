@@ -41,9 +41,17 @@ body {
 }
 
 header{
+    position: fixed;
     background-color: black;
     box-shadow: 5px 10px 20px #b5af86;
     width: 100%;
+    opacity: 0.8;
+    transition: opacity 2s;
+}
+
+.hiddentop{
+    opacity: 1;
+    transition: opacity 2s;
 }
 
 .headerContainer{
@@ -51,8 +59,8 @@ header{
     flex-flow: row nowrap;
     padding: 0 40px;
     box-sizing: border-box;
-    margin: 6px auto;
-    height: 95px;
+    margin: 5px auto;
+    height: 80px;
     align-items: center;
     justify-content: flex-end;
     background-image: url(../Img/logoTextWhite.png);
@@ -100,7 +108,7 @@ header{
     background-image: url(../Img/Telegram_white.png);
 }
 main{
-    margin: 50px auto;
     flex: 1 0 auto;
+    margin: 140px auto 30px;
 
 }

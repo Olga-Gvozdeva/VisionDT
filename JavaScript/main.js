@@ -376,10 +376,3 @@ function accStore(main, title){
 }
 
 */
-
-function scrollMain(){
-    document.addEventListener("scroll", function(){
-        let headerCont = document.querySelector('.headerContainer');
-        headerCont.style.opacity = '0.6';
-    })
-}
