@@ -33,7 +33,7 @@ html,  body {
 }
 
 body {
-    font: normal 400 16px / 26px 'ImpasseRegular', 'Roboto', sans-serif;
+    font: normal 400 16px / 26px 'Roboto', sans-serif;
     letter-spacing: 0.05em;
     display: flex;
     flex-direction: column;
@@ -111,4 +111,74 @@ main{
     flex: 1 0 auto;
     margin: 140px auto 30px;
 
+}
+
+
+
+
+
+
+
+
+footer {
+    flex: 0 0 auto;
+    background: black;
+    color: #fff;
+    width: 100%;
+}
+
+footer section + section {
+    border-top: 2px solid rgba(255,255,255,0.4);
+}
+
+footer section{
+    padding: 15px 40px;
+}
+
+.footerCont{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer h3 {
+    margin: 25px 0;
+    text-align: left;
+    font-size: 30px;
+    line-height: 46px;
+}
+
+footer p {
+    flex-basis: 60%;
+    margin-bottom: 15px;
+}
+
+.footerButton{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.footerContacts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+
+footer button {
+    height: 50px;
+    width: max-content;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 50px;
+    border-radius: 5px;
+    color: #fff;
+    background: rgb(177, 12, 12);
+    letter-spacing: 0.04em;
+}
+.copy {
+    margin: 64px 0 0;
+    opacity: 0.4;
 }
