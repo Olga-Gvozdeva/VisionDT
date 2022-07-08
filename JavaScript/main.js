@@ -377,11 +377,68 @@ function accStore(main, title){
 
 */
 
-function openHamb(){
-    let hamb = document.querySelector('.hamb');
-    let openmenu = document.querySelector('.menu');
+function displaySize(){
 
-    hamb.addEventListener('click', function(){
-        openmenu.classList.toggle('menuActiv');
-    })
-}
+    let parent = document.querySelector('.menu');
+    let home = document.querySelector('.services');
+    let products = document.querySelector('.portfolio');
+    let store = document.querySelector('.about');
+
+    let dropdownMenu = document.querySelector('.menuActiv');
+    
+    
+    let cloneHome = home.cloneNode(true);
+    cloneHome.innerHTML = 'Услуги';
+    
+    let cloneProducts = products.cloneNode(true);
+    cloneProducts.innerHTML = 'Портфолио';
+    
+    let cloneStore = store.cloneNode(true);
+    cloneStore.innerHTML = 'О нас';
+    
+    
+    let width = window.innerWidth;
+    
+    
+    let minResize = false;
+    let maxResize = false;
+    
+    let f_windowWidth = function (width) {
+    
+              if (width <= 1200 && !minResize) {
+                  minResize = true;   
+                  maxResize = false;
+                  parent.style.display = 'none';
+                  dropdownMenu.classList.add('hiddenmenuActiv');
+                  dropdownMenu.prepend(cloneHome);
+                  dropdownMenu.prepend(cloneProducts);
+                  dropdownMenu.prepend(cloneStore);
+              } 
+    
+              if (width >= 1200 && !maxResize) {
+                  maxResize = true;
+                  minResize = false;
+                  parent.style.display = 'flex';
+                  cloneHome.remove();
+                  cloneProducts.remove();
+                  cloneStore.remove();
+              }
+        };
+            
+        f_windowWidth(width);
+        $(window).on("resize", function () {
+            let width = window.innerWidth;
+            f_windowWidth(width); 
+        });
+    
+    };
+
+    function openHamb(){
+
+        let dropdownMenu = document.querySelector('.menuActiv');
+        let hamburger = document.querySelector('.hamburger');
+
+        hamburger.addEventListener('click', function(){
+            dropdownMenu.classList.toggle('hiddenmenuActiv');
+        })
+    }

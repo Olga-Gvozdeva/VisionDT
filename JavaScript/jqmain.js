@@ -8,6 +8,7 @@ $(function(){
         }
     });
 
+    displaySize();
     openHamb();
 /*dropmenuClick();
 gataka();
