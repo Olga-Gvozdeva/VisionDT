@@ -408,7 +408,7 @@ function displaySize(){
               if (width <= 1200 && !minResize) {
                   minResize = true;   
                   maxResize = false;
-                  parent.style.display = 'none';
+                  parent.classList.add('hiddenmenuActiv');
                   dropdownMenu.classList.add('hiddenmenuActiv');
                   dropdownMenu.prepend(cloneHome);
                   dropdownMenu.prepend(cloneProducts);
@@ -418,7 +418,7 @@ function displaySize(){
               if (width >= 1200 && !maxResize) {
                   maxResize = true;
                   minResize = false;
-                  parent.style.display = 'flex';
+                  parent.classList.remove('hiddenmenuActiv');
                   cloneHome.remove();
                   cloneProducts.remove();
                   cloneStore.remove();

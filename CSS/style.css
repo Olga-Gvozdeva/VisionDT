@@ -59,7 +59,7 @@ header{
     flex-flow: row nowrap;
     padding: 0 40px;
     box-sizing: border-box;
-    margin: 5px auto;
+    margin: 5px auto 15px;
     height: 80px;
     align-items: center;
     justify-content: flex-end;
@@ -183,6 +183,7 @@ footer h3 {
 footer p {
     flex-basis: 60%;
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 .footerButton{
