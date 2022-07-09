@@ -10,6 +10,9 @@ $(function(){
 
     displaySize();
     openHamb();
+
+    if($('.previous').length) slidebar('.previous','.next','.item');
+    
 /*dropmenuClick();
 gataka();
 writeTable();

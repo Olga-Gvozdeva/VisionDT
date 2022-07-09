@@ -47,6 +47,7 @@ header{
     width: 100%;
     opacity: 0.8;
     transition: opacity 2s;
+    z-index: 1000;
 }
 
 .hiddentop{
@@ -111,11 +112,6 @@ header{
 .telegram{
     background-image: url(../Img/Telegram_white.png);
 }
-main{
-    flex: 1 0 auto;
-    margin: 140px auto 30px;
-
-}
 
 .hamburger{
     display: none;
@@ -151,6 +147,62 @@ main{
 .hiddenmenuActiv{
     display: none;
 }
+
+main{
+    flex: 1 0 auto;
+    width: 100%;
+
+}
+
+.mainContainer{
+margin: 110px auto 30px;
+padding: 0 40px;
+}
+
+.slider{
+    min-width: 240px;
+    position: relative;
+    height: 500px;
+}
+.slider .item img, .slider .item2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+.slider .previous, .slider .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.slider .previous:hover,
+.slider .next:hover{
+    background-color: rgba(172, 167, 167, 0.2);
+}
+.slider .item{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
 
 
 
