@@ -20,6 +20,7 @@ html, body, body div, span, label, h1, h2, h3, h4, h5, h6, p, a, em, font, img, 
     background: none;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 
 }
        
@@ -105,8 +106,8 @@ header{
     background-image: url(../Img/VK_white.png);
 }
 
-.instagram{
-    background-image: url(../Img/Instagram_white.png);
+.youtube{
+    background-image: url(../Img/YouTube_white.png);
 }
 
 .telegram{
@@ -128,15 +129,16 @@ header{
     position: absolute;
     display: flex;
     flex-flow: column nowrap;
-    width: 100px;
+    width: 100%;
     font-size: 18px;
-    height: 240px;
-    top: 90px;
+    height: 100vh;
+    top: 100px;
     right: 0;
-    align-items: flex-end;
-    padding: 0 40px;
+    align-items: center;
+    padding: 20px 40px;
     background-color: black;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    line-height: 3em;
 
 }
 
@@ -204,12 +206,19 @@ padding: 0 40px;
 }
 
 .salesInfo{
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: max-content;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.5);
     margin: 20px;
     position: absolute;
 }
 
-
+.item a{
+    color: black;
+}
 
 footer {
     flex: 0 0 auto;
