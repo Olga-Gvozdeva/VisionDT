@@ -29,7 +29,7 @@ html * {
    
 html,  body {
     height: 100%;
-    min-width: 315px;
+    min-width: 290px;
 }
 
 body {
@@ -63,11 +63,15 @@ header{
     height: 80px;
     align-items: center;
     justify-content: flex-end;
-    background-image: url(../Img/logoTextWhite.png);
-    background-size: contain;
-    background-position: center left 40px;
-    background-repeat: no-repeat;
-    background-clip: content-box;
+    background: url(../Img/logoTextWhite.png) center left/contain no-repeat content-box;
+}
+
+.logoHome{
+    cursor: pointer;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 0;
 }
 
 .menu, .socialMedia{
@@ -197,7 +201,8 @@ footer p {
     flex-flow: row nowrap;
     justify-content: space-between;
     margin-top: 15px;
-    align-items: center;
+    text-align: center;
+    text-align-last: center;
 }
 
 footer button {
