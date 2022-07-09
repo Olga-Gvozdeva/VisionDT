@@ -203,7 +203,11 @@ padding: 0 40px;
     }
 }
 
-
+.salesInfo{
+    background-color: aquamarine;
+    margin: 20px;
+    position: absolute;
+}
 
 
 
