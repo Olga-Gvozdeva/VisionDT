@@ -278,7 +278,7 @@ footer h3 {
     line-height: 46px;
 }
 
-footer p {
+.footerCont p {
     flex-basis: 60%;
     margin-bottom: 15px;
     text-align: justify;
