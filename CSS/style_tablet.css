@@ -31,7 +31,9 @@
     display: block;
 }
 
-
+.mainPortfolio{
+    grid-template-columns: minmax(100px, 30%) minmax(100px, 30%) minmax(100px, 30%);
+}
 
 
 

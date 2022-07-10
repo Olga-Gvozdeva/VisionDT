@@ -41,9 +41,12 @@
     
     }
 
-    .mainContainer{
-        margin: 145px auto 30px;
-        padding: 0 20px;
+    .main{
+        margin: 175px auto 30px;
+    }
+        
+    .mainContainer section:first-child{
+        padding: 0;
     }
 
     .slider{
@@ -59,6 +62,10 @@
 
     .slider .previous, .slider .next{
         font-size: 30px;
+    }
+
+    .salesInfo h3{
+        font-size: 16px;
     }
 
     footer section{
@@ -92,6 +99,14 @@
 .footerContacts{
     flex-direction: column;
 }
+
+.mainPortfolio{
+    padding: 0 20px;
+    gap: 10px;
+    grid-template-columns: minmax(100px, 40%) minmax(100px, 40%);
+}
+
+
 
 
 }
