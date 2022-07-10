@@ -32,7 +32,7 @@
 }
 
 .mainPortfolio{
-    grid-template-columns: minmax(100px, 30%) minmax(100px, 30%) minmax(100px, 30%);
+    grid-template-columns: minmax(100px, 33%) minmax(100px, 33%) minmax(100px, 33%);
 }
 
 

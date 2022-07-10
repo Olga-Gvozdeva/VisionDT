@@ -316,7 +316,7 @@ footer button {
 
 .mainPortfolio{
     display: grid;
-    grid-template-columns: minmax(100px, 30%) minmax(100px, 30%) minmax(100px, 30%) minmax(100px, 30%);
+    grid-template-columns: minmax(100px, 25%) minmax(100px, 25%) minmax(100px, 25%) minmax(100px, 25%);
     gap: 15px;
     padding: 0 40px;
     justify-content: space-evenly;
@@ -337,5 +337,6 @@ footer button {
 }
 
 .mainPortfolio img:active{
-    height: 98%;
+    height: 101%;
+    
 }
