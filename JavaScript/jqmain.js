@@ -21,6 +21,7 @@ $(function(){
         }
       });
 
+
 /*dropmenuClick();
 gataka();
 writeTable();
