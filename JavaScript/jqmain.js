@@ -12,7 +12,15 @@ $(function(){
     openHamb();
 
     if($('.previous').length) slidebar('.previous','.next','.item');
-    
+
+
+    $('.item').magnificPopup({
+        type: 'image',
+        gallery:{
+          enabled:true
+        }
+      });
+
 /*dropmenuClick();
 gataka();
 writeTable();
