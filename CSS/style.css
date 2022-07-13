@@ -175,27 +175,25 @@ main{
 
 }
 
-
-
-.mainContainer section:first-child{
-    padding: 0 40px;
+/*
+.whyWe li::before {
+    content: ' ';
+    background-image: url(../Img/smalllogo.jpg);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 30px;
+    position: absolute;
+    margin-left: -50px;
 }
-
-.mainContainer section:nth-child(2){
-    margin-top: 50px ;
-    padding: 0 40px;
-}
-
-.mainContainer section:nth-child(2) h1{
-    font-size: 36px;
-}
-
+*/
 .slider{
     min-width: 240px;
     position: relative;
     height: 500px;
 }
-.slider .item img{
+.slider .sliderItem img{
     object-fit: cover;
     width: 100%;
     height: 500px;
@@ -221,7 +219,7 @@ main{
 .slider .next:hover{
     background-color: rgba(172, 167, 167, 0.2);
 }
-.slider .item{
+.slider .sliderItem{
     animation-name: fade;
     animation-duration: 1s;
 }
@@ -245,7 +243,7 @@ main{
     position: absolute;
 }
 
-.item a{
+.sliderItem a{
     color: black;
 }
 
@@ -360,4 +358,48 @@ footer button {
     right: 0;
     bottom: 0;
     background: rgba(0,0,0,0.6);
+}
+
+.mainContainer section + section{
+    margin-top: 30px;
+}
+
+.whyWe ol{
+    display: grid;
+    grid-template-columns: minmax(100px, 50%) minmax(100px, 50%);
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.whyWe{
+    padding: 0 40px;
+}
+
+.whyWe h1{
+    font-size: 30px;
+    border-left: 1px solid grey;
+    padding: 30px;
+}
+
+.whyWe p{
+    width: 60%;
+    text-align: justify;
+    padding: 20px 0;
+}
+.logoCent{
+    margin: 30px auto 30px;
+    width: 100%;
+    height: 120px;
+    background-image: url(../Img/logoCent.jpg);
+    background-size: contain;
+}
+
+
+
+
+.whyWe img{
+    object-fit: cover;
+    width: 100%;
+
 }

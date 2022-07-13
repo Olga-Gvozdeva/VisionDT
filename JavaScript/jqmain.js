@@ -11,7 +11,7 @@ $(function(){
     displaySize();
     openHamb();
 
-    if($('.previous').length) slidebar('.previous','.next','.item');
+    if($('.previous').length) slidebar('.previous','.next','.sliderItem');
 
 
     $('.item').magnificPopup({
