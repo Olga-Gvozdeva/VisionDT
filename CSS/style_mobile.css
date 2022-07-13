@@ -106,18 +106,28 @@
     grid-template-columns: minmax(100px, 50%) minmax(100px, 50%);
 }
 
-.whyWe p {
+.whyWe {
+    padding: 0 20px;
+}
+
+.whyWe h1{
+    font-size: 26px;
+}
+
+.whyWe p, .portfolio p{
     width: 100%;
     text-align: justify;
     padding: 20px 0;
+    font-size: 14px;
 }
 
 .whyWe ol {
     display: grid;
-    grid-template-columns: minmax(100px, 80%);
+    grid-template-columns: minmax(100px, 100%);
     justify-content: center;
     align-items: center;
 }
+
 }
 
 

@@ -317,9 +317,12 @@ footer button {
     display: grid;
     grid-template-columns: minmax(100px, 25%) minmax(100px, 25%) minmax(100px, 25%) minmax(100px, 25%);
     gap: 15px;
-    padding: 0 40px;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.portfolio{
+    padding: 0 40px;
 }
 
 .mainPortfolio img, .mainPortfolio a{
@@ -339,6 +342,7 @@ footer button {
     height: 101%;
     
 }
+
 
 
 .lightbox{
@@ -376,13 +380,13 @@ footer button {
     padding: 0 40px;
 }
 
-.whyWe h1{
+h1{
     font-size: 30px;
     border-left: 1px solid grey;
     padding: 30px;
 }
 
-.whyWe p{
+.whyWe p, .portfolio p{
     width: 60%;
     text-align: justify;
     padding: 20px 0;
@@ -395,11 +399,15 @@ footer button {
     background-size: contain;
 }
 
-
+.whyWe h1:nth-of-type(2), .whyWe h1:nth-of-type(3){
+    margin-top: 20px;
+}
 
 
 .whyWe img{
     object-fit: cover;
     width: 100%;
+    cursor: pointer;
 
 }
+
