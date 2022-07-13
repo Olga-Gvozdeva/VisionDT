@@ -128,6 +128,35 @@
     align-items: center;
 }
 
+.mainServices h1{
+    font-size: 20px;
+}
+
+.mainServices h2{
+    font-size: 14px;
+}
+
+.mainServices p{
+    font-size: 14px;
+}
+
+.mainServices {
+    padding: 0 20px;
+}
+
+.services{
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+}
+
+.price{
+    font-weight: 700;
+}
+
+.servicesItem{
+    flex-flow: column wrap;
+}
 }
 
 

@@ -479,7 +479,12 @@ function displaySize(){
         }
     }
 
-
-    
-    
-    
+        function accordeon(){
+            let beta = document.querySelectorAll('.mainServices');
+            for(let elem of beta){
+                elem.firstElementChild.addEventListener('click', function(){
+                    elem.lastElementChild.classList.toggle('openacc');
+                })
+            }
+            
+        }

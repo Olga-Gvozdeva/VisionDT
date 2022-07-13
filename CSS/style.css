@@ -411,3 +411,36 @@ h1{
 
 }
 
+.mainServices{
+    padding: 0 40px;
+    margin-top: 20px;
+}
+
+.mainServices h1{
+    cursor: pointer;
+}
+.servicesItem{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.servicesItem:hover, .servicesItem:active{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+h1 + .servicesItem{
+    margin-top: 10px;
+}
+
+h1 ~ div{
+    display: none;
+}
+
+.openacc{
+    display: block;
+}
+

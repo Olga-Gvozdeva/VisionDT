@@ -21,6 +21,7 @@ $(function(){
         }
       });
 
+      accordeon();
 
 /*dropmenuClick();
 gataka();

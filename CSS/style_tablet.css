@@ -35,7 +35,12 @@
     grid-template-columns: minmax(100px, 33%) minmax(100px, 33%) minmax(100px, 33%);
 }
 
+.mainServices h1{
+    font-size: 26px;
+}
 
-
+.mainServices h2{
+    font-size: 20px;
+}
 
 }
