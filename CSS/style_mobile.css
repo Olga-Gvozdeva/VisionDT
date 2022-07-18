@@ -100,8 +100,11 @@
     flex-direction: column;
 }
 
-.mainPortfolio{
+.portfolio{
     padding: 0 20px;
+}
+
+.mainPortfolio{
     gap: 10px;
     grid-template-columns: minmax(100px, 50%) minmax(100px, 50%);
 }
