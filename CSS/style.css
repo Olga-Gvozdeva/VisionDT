@@ -417,21 +417,6 @@ h1{
 }
 
 
-.openaccmf{
-    position: relative;
-    transition: 1s;
-}
-
-.openaccmf::after{
-    content: url(../Img/icon-drop-logo.png);
-    display: block;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    cursor: pointer;
-    transform: rotate(45deg);
-}
-
 .openaccmfOpn::after{
     transform: rotate(90deg);
 }
@@ -448,7 +433,24 @@ h1{
 .mainServices{
     padding: 0 40px;
     margin: 20px 120px;
+    position: relative;
+    transition: 1s;
+}
 
+.mainServices::after{
+    content: url(../Img/icon-drop-logo.png);
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    transition: 1s;
+}
+
+.openaccmfOpn::after{
+    transform: rotate(90deg);
+    transition: 1s;
 }
 
 .mainServices h1{

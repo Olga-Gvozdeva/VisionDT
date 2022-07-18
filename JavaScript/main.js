@@ -482,7 +482,7 @@ function displaySize(){
         function accordeon(){
             let beta = document.querySelectorAll('.mainServices');
             for(let elem of beta){
-                elem.firstElementChild.addEventListener('click', function(){
+                elem.addEventListener('click', function(){
                     elem.lastElementChild.classList.toggle('openacc');
                 })
             }
@@ -490,7 +490,7 @@ function displaySize(){
         }
 
         function rotateaft(){
-        let item = document.querySelectorAll('.openaccmf');
+        let item = document.querySelectorAll('.mainServices');
       for (let i = item.length - 1; i >= 0; i--) {
         item[i].onclick = function(){
           this.classList.toggle('openaccmfOpn');
