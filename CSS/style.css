@@ -169,7 +169,6 @@ header{
 }
 
 main{
-    margin: 140px auto 30px;
     flex: 1 0 auto;
     width: 100%;
 
@@ -364,17 +363,31 @@ footer button {
     background: rgba(0,0,0,0.6);
 }
 
+.mainContainer{
+    margin: 140px auto 30px;
+
+}
+
+.mainServBack{
+    margin: 10px auto -20px;
+    padding-top: 130px;
+    padding-bottom: 30px;
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 35%);
+}
+
 .mainContainer section + section{
     margin-top: 30px;
 }
 
 .whyWe ol{
     display: grid;
-    grid-template-columns: minmax(100px, 50%) minmax(100px, 50%);
+    grid-template-columns: minmax(100px, 40%) minmax(100px, 40%);
     gap: 10px;
     justify-content: space-evenly;
     align-items: center;
 }
+
 
 .whyWe{
     padding: 0 40px;
@@ -382,7 +395,7 @@ footer button {
 
 h1{
     font-size: 30px;
-    border-left: 1px solid grey;
+    border-left: 1px solid black;
     padding: 30px;
 }
 
@@ -404,21 +417,49 @@ h1{
 }
 
 
-.whyWe img{
+.openaccmf{
+    position: relative;
+    transition: 1s;
+}
+
+.openaccmf::after{
+    content: url(../Img/icon-drop-logo.png);
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.openaccmfOpn::after{
+    transform: rotate(90deg);
+}
+
+.leftImg img{
     object-fit: cover;
+    object-position: center;
     width: 100%;
+    height: 100%;
     cursor: pointer;
 
 }
 
 .mainServices{
     padding: 0 40px;
-    margin-top: 20px;
+    margin: 20px 120px;
+
 }
 
 .mainServices h1{
     cursor: pointer;
+    font-size: 24px;
 }
+
+.mainServices h2{
+    font-size: 20px;
+}
+
 .servicesItem{
     display: flex;
     flex-flow: row nowrap;
@@ -427,7 +468,7 @@ h1{
 }
 
 .servicesItem:hover, .servicesItem:active{
-    background-color: black;
+    background-color: rgb(0, 0, 0, 0.8);
     color: white;
     cursor: pointer;
 }
@@ -444,3 +485,18 @@ h1 ~ div{
     display: block;
 }
 
+.nameservice{
+    flex-basis: 70%;
+}
+.price{
+    flex-basis: 25%;
+    text-align: right;
+}
+
+.mainback{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    position: fixed;
+    z-index: -1000;
+}

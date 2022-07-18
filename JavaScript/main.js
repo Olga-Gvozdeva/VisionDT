@@ -488,3 +488,12 @@ function displaySize(){
             }
             
         }
+
+        function rotateaft(){
+        let item = document.querySelectorAll('.openaccmf');
+      for (let i = item.length - 1; i >= 0; i--) {
+        item[i].onclick = function(){
+          this.classList.toggle('openaccmfOpn');
+        }
+      }
+    }

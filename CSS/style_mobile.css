@@ -142,6 +142,7 @@
 
 .mainServices {
     padding: 0 20px;
+    margin: 20px 0;
 }
 
 .services{
@@ -152,13 +153,17 @@
 
 .price{
     font-weight: 700;
+    text-align: left;
 }
 
 .servicesItem{
     flex-flow: column wrap;
 }
-}
 
+.openaccmf::after{
+    content: '';
+}
+}
 
 
 

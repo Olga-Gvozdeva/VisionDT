@@ -22,6 +22,8 @@ $(function(){
       });
 
       accordeon();
+      rotateaft();
+
 
 /*dropmenuClick();
 gataka();
