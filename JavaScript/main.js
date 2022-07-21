@@ -480,21 +480,12 @@ function displaySize(){
     }
 
         function accordeon(){
-            let beta = document.querySelectorAll('.mainServices');
+            let beta = document.querySelectorAll('.openaccmf');
             for(let elem of beta){
                 elem.addEventListener('click', function(){
-                    elem.lastElementChild.classList.toggle('openacc');
+                    elem.nextElementSibling.classList.toggle('openacc');
+                    elem.classList.toggle('openaccmfOpn');
                 })
             }
             
         }
-
-        function rotateaft(){
-        let item = document.querySelectorAll('.mainServices');
-      for (let i = item.length - 1; i >= 0; i--) {
-        item[i].onclick = function(){
-          this.classList.toggle('openaccmfOpn');
-        }
-      }
-    }
-

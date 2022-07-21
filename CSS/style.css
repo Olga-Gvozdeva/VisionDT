@@ -437,7 +437,7 @@ h1{
     transition: 1s;
 }
 
-.mainServices::after{
+.openaccmf::after{
     content: url(../Img/icon-drop-logo.png);
     display: block;
     position: absolute;
