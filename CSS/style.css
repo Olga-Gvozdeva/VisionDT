@@ -503,3 +503,23 @@ h1 ~ div{
     z-index: -1000;
 }
 
+
+.shopMap{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+.aboutStore{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mapShops{
+    flex-basis: 60%;
+}
+
+.aboutUs{
+    padding: 0 40px;
+}
