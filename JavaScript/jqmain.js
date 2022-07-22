@@ -26,6 +26,9 @@ $(function(){
       if($('.aboutDelivery').length) accStore('.aboutDelivery','.textDelivery');
       if($('.aboutReturns').length) accStore('.aboutReturns','.textReturns');
 
+    popUpForm();
+
+
 /*dropmenuClick();
 gataka();
 writeTable();

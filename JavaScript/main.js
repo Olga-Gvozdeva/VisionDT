@@ -500,4 +500,13 @@ function displaySize(){
             
         }
 
+function popUpForm(){
+    let popUpButton = document.querySelectorAll('.popUpFade');
+    let popUpForm = document.querySelector('.popUpForm');
+    for(elem of popUpButton){
+        elem.addEventListener('.click', function(){
+            popUpForm.classList.toggle('popUpFormActive');
+        })
+    }
 
+}

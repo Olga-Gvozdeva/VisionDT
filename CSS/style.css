@@ -41,6 +41,27 @@ body {
     min-height: 100%;
 }
 
+
+
+.popUpFormActive{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.proba{
+    width: 40%;
+    height: 60%;
+    background-color: rgba(255,255,255,1);
+    transition:none;
+ 
+}
+
 h1{
     font-size: 26px;
     border-left: 1px solid black;
