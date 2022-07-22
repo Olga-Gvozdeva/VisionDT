@@ -1,107 +1,79 @@
 @media screen and (max-width: 760px) {
 
-    .headerContainer{
-        height: 105px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        padding: 0 20px;
-        background-size: 150px;
-        background-position: top center;
+h1{
+    font-size: 20px;
+}
 
-    }
+h2{
+    font-size: 18px;
+}
 
-    .logoHome{
-        cursor: pointer;
-        position: absolute;
-        width: 100%;
-        height: 60px;
-        top: 0;
-    }
+h3 {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+}
 
-    .socialMedia{
-        margin: 0;
-        width: 135px;
-    }
-
-    .socialMedia a{
-        width: 35px;
-        height: 35px;
-
-    }
-
-    .hamburger{
-        width: 35px;
-        height: 35px;
-        margin-left: 20px;
-    }
-
-    .menuActiv{
-        top: 120px;
-    
-    }
-
-    .main{
-        margin: 175px auto 30px;
-    }
-        
-    .mainContainer section:first-child{
-        padding: 0;
-    }
-
-    .slider{
-        min-width: 240px;
-        position: relative;
-        height: 300px;
-    }
-    .slider .sliderItem img{
-        object-fit: cover;
-        width: 100%;
-        height: 300px;
-    }
-
-    .slider .previous, .slider .next{
-        font-size: 30px;
-    }
-
-    .salesInfo h3{
-        font-size: 16px;
-    }
-
-    footer section{
-        padding: 15px 20px;
-    }
-
-    .footerCont{
-        display: flex;
-        flex-flow: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    footer h3 {
-        margin: 20px 0;
-        text-align: left;
-        font-size: 16px;
-        line-height: 26px;
-    }
-
-    .footerCont p{
+p{
     font-size: 14px;
-    }
-    
-
-.footerButton{
-    justify-content: flex-end;
 }
 
-.footerContacts{
-    flex-direction: column;
-}
-
-.portfolio{
+.forPadding, .whyWe{
     padding: 0 20px;
+}
+
+.headerContainer{
+    height: 105px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-size: 150px;
+    background-position: top center;
+}
+.logoHome{
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 0;
+}
+.socialMedia{
+    margin: 0;
+    width: 135px;
+}
+.socialMedia a{
+    width: 35px;
+    height: 35px;
+}
+.hamburger{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+}
+
+.menuActiv{
+    top: 120px;
+
+}
+.main{
+    margin: 175px auto 30px;
+}
+    
+.mainContainer section:first-child{
+    padding: 0;
+}
+.slider{
+    min-width: 240px;
+    position: relative;
+    height: 300px;
+}
+.slider .sliderItem img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+.slider .previous, .slider .next{
+        font-size: 30px;
 }
 
 .mainPortfolio{
@@ -109,19 +81,10 @@
     grid-template-columns: minmax(100px, 50%) minmax(100px, 50%);
 }
 
-.whyWe {
-    padding: 0 20px;
-}
 
-.whyWe h1{
-    font-size: 26px;
-}
-
-.whyWe p, .portfolio p{
+h1 ~ p{
     width: 100%;
-    text-align: justify;
     padding: 20px 0;
-    font-size: 14px;
 }
 
 .whyWe ol {
@@ -131,20 +94,7 @@
     align-items: center;
 }
 
-.mainServices h1{
-    font-size: 20px;
-}
-
-.mainServices h2{
-    font-size: 14px;
-}
-
-.mainServices p{
-    font-size: 14px;
-}
-
 .mainServices {
-    padding: 0 20px;
     margin: 20px 0;
 }
 
@@ -163,11 +113,43 @@
     flex-flow: column wrap;
 }
 
+.shopMap{
+    grid-template-columns: minmax(280px, 100%);
+    grid-template-rows: max-content minmax(350px, 100%);
+    gap: 10px;
+}
+
+footer section{
+    padding: 15px 20px;
+}
+
+footer section:last-of-type{
+    padding: 15px 20px 0;
+}
+
+.footerCont{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerButton{
+    justify-content: flex-end;
 
 }
 
-@media screen and (max-width: 500px) {
-    .mainServices::after{
+.footerContacts{
+    flex-direction: column;
+
+}
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .openaccmf::after{
         content: '';
     }
 }

@@ -41,6 +41,33 @@ body {
     min-height: 100%;
 }
 
+h1{
+    font-size: 26px;
+    border-left: 1px solid black;
+    padding: 30px;
+}
+
+h1 ~ p{
+    width: 60%;
+    text-align: justify;
+    padding: 20px 0;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3 {
+    margin: 25px 0;
+    text-align: left;
+    font-size: 24px;
+    line-height: 46px;
+}
+
+h4{
+    margin-bottom: 20px;
+}
+
 header{
     position: fixed;
     background-color: black;
@@ -59,13 +86,16 @@ header{
 .headerContainer{
     display: flex;
     flex-flow: row nowrap;
-    padding: 0 40px;
     box-sizing: border-box;
     margin: 5px auto 15px;
     height: 80px;
     align-items: center;
     justify-content: flex-end;
     background: url(../Img/logoTextWhite.png) center left/contain no-repeat content-box;
+}
+
+.forPadding, .whyWe{
+    padding: 0 40px;
 }
 
 .logoHome{
@@ -171,26 +201,18 @@ header{
 main{
     flex: 1 0 auto;
     width: 100%;
+}
+
+.mainContainer{
+    margin: 140px auto 30px;
 
 }
 
-/*
-.whyWe li::before {
-    content: ' ';
-    background-image: url(../Img/smalllogo.jpg);
-    background-size: contain;
-    background-position: left center;
-    background-repeat: no-repeat;
-    width: 45px;
-    height: 30px;
-    position: absolute;
-    margin-left: -50px;
-}
-*/
 .slider{
     min-width: 240px;
     position: relative;
     height: 500px;
+    margin-bottom: 30px;
 }
 .slider .sliderItem img{
     object-fit: cover;
@@ -242,9 +264,197 @@ main{
     position: absolute;
 }
 
+.salesInfo h3{
+    margin: 0;
+    text-align: left;
+    font-size: 20px;
+
+}
+
 .sliderItem a{
     color: black;
 }
+
+.whyWe ol{
+    display: grid;
+    grid-template-columns: minmax(100px, 40%) minmax(100px, 40%);
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.whyWe h1:nth-of-type(2), .whyWe h1:nth-of-type(3){
+    margin-top: 20px;
+}
+
+.leftImg img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+/*Portfolio*/
+
+.mainPortfolio{
+    display: grid;
+    grid-template-columns: minmax(100px, 25%) minmax(100px, 25%) minmax(100px, 25%) minmax(100px, 25%);
+    gap: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainPortfolio img, .mainPortfolio a{
+    object-fit: cover;
+    object-position: 30% center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.mainPortfolio img:hover, .mainPortfolio a:hover{
+    cursor:pointer;
+    box-shadow: 5px 10px 20px black;
+}
+
+.mainPortfolio img:active, .mainPortfolio a:active{
+    height: 101%;
+    
+}
+
+/*Services*/
+
+.mainServBack{
+    margin: 10px auto -20px;
+    padding-top: 130px;
+    padding-bottom: 30px;
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 35%);
+}
+
+.logoCent{
+    margin: 30px auto 30px;
+    width: 100%;
+    height: 120px;
+    background-image: url(../Img/logoCent.jpg);
+    background-size: contain;
+}
+
+.openaccmfOpn::after{
+    transform: rotate(90deg);
+}
+
+.mainServices{
+    margin: 20px 120px;
+    position: relative;
+    transition: 1s;
+}
+
+.openaccmf::after{
+    content: url(../Img/icon-drop-logo.png);
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    transition: 1s;
+}
+
+.openaccmfOpn::after{
+    transform: rotate(90deg);
+    transition: 1s;
+}
+
+.mainServices h1{
+    cursor: pointer;
+}
+
+.servicesItem{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.servicesItem:hover, .servicesItem:active{
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+    cursor: pointer;
+}
+
+h1 + .servicesItem{
+    margin-top: 10px;
+}
+
+h1 ~ div{
+    display: none;
+}
+
+.openacc{
+    display: block;
+}
+
+.nameservice{
+    flex-basis: 70%;
+}
+.price{
+    flex-basis: 25%;
+    text-align: right;
+}
+
+/*About*/
+
+.shopMap{
+    display: grid;
+    grid-template-columns: minmax(100px, 40%) minmax(150px, 60%);
+    grid-template-rows: minmax(350px, 500px);
+    gap: 25px;
+}
+
+.aboutStore{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutStore p{
+    text-align: justify;
+}
+
+.delivery{
+    margin-bottom: 20px;
+}
+
+.textDelivery, .textReturns{
+    display: none;
+}
+
+.activeTitle{
+    display: block;
+}
+
+.aboutDelivery, .aboutReturns{
+    cursor: pointer;
+    border-top: 1px solid lightgrey;
+
+}
+
+h4 + p{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 footer {
     flex: 0 0 auto;
@@ -261,18 +471,15 @@ footer section{
     padding: 15px 40px;
 }
 
+footer section:last-of-type{
+    padding: 15px 40px 0;
+}
+
 .footerCont{
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: space-between;
-}
-
-footer h3 {
-    margin: 25px 0;
-    text-align: left;
-    font-size: 30px;
-    line-height: 46px;
 }
 
 .footerCont p {
@@ -310,216 +517,4 @@ footer button {
 .copy {
     margin: 64px 0 0;
     opacity: 0.4;
-}
-
-.mainPortfolio{
-    display: grid;
-    grid-template-columns: minmax(100px, 25%) minmax(100px, 25%) minmax(100px, 25%) minmax(100px, 25%);
-    gap: 15px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.portfolio{
-    padding: 0 40px;
-}
-
-.mainPortfolio img, .mainPortfolio a{
-    object-fit: cover;
-    object-position: 30% center;
-    width: 100%;
-    height: 100%;
-
-}
-
-.mainPortfolio img:hover, .mainPortfolio a:hover{
-    cursor:pointer;
-    box-shadow: 5px 10px 20px black;
-}
-
-.mainPortfolio img:active, .mainPortfolio a:active{
-    height: 101%;
-    
-}
-
-
-
-.lightbox{
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    padding: 16px;
-    border-radius: 16px;
-    background: white;
-    opacity: 0;
-}
-
-.screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.6);
-}
-
-.mainContainer{
-    margin: 140px auto 30px;
-
-}
-
-.mainServBack{
-    margin: 10px auto -20px;
-    padding-top: 130px;
-    padding-bottom: 30px;
-    background: rgb(0,0,0);
-    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 35%);
-}
-
-.mainContainer section + section{
-    margin-top: 30px;
-}
-
-.whyWe ol{
-    display: grid;
-    grid-template-columns: minmax(100px, 40%) minmax(100px, 40%);
-    gap: 10px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-
-.whyWe{
-    padding: 0 40px;
-}
-
-h1{
-    font-size: 30px;
-    border-left: 1px solid black;
-    padding: 30px;
-}
-
-.whyWe p, .portfolio p{
-    width: 60%;
-    text-align: justify;
-    padding: 20px 0;
-}
-.logoCent{
-    margin: 30px auto 30px;
-    width: 100%;
-    height: 120px;
-    background-image: url(../Img/logoCent.jpg);
-    background-size: contain;
-}
-
-.whyWe h1:nth-of-type(2), .whyWe h1:nth-of-type(3){
-    margin-top: 20px;
-}
-
-
-.openaccmfOpn::after{
-    transform: rotate(90deg);
-}
-
-.leftImg img{
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-
-}
-
-.mainServices{
-    padding: 0 40px;
-    margin: 20px 120px;
-    position: relative;
-    transition: 1s;
-}
-
-.openaccmf::after{
-    content: url(../Img/icon-drop-logo.png);
-    display: block;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    cursor: pointer;
-    transform: rotate(45deg);
-    transition: 1s;
-}
-
-.openaccmfOpn::after{
-    transform: rotate(90deg);
-    transition: 1s;
-}
-
-.mainServices h1{
-    cursor: pointer;
-    font-size: 24px;
-}
-
-.mainServices h2{
-    font-size: 20px;
-}
-
-.servicesItem{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.servicesItem:hover, .servicesItem:active{
-    background-color: rgb(0, 0, 0, 0.8);
-    color: white;
-    cursor: pointer;
-}
-
-h1 + .servicesItem{
-    margin-top: 10px;
-}
-
-h1 ~ div{
-    display: none;
-}
-
-.openacc{
-    display: block;
-}
-
-.nameservice{
-    flex-basis: 70%;
-}
-.price{
-    flex-basis: 25%;
-    text-align: right;
-}
-
-.mainback{
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
-    position: fixed;
-    z-index: -1000;
-}
-
-
-.shopMap{
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-
-.aboutStore{
-    flex-basis: 40%;
-    display: flex;
-    flex-direction: column;
-}
-
-.mapShops{
-    flex-basis: 60%;
-}
-
-.aboutUs{
-    padding: 0 40px;
 }

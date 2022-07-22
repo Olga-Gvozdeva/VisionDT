@@ -377,6 +377,16 @@ function accStore(main, title){
 
 */
 
+function accStore(main, title){
+
+    let buttonClick = document.querySelector(main);
+    let titleText = document.querySelector(title);
+
+    buttonClick.addEventListener('click', function(){
+        titleText.classList.toggle('activeTitle');
+    })
+}
+
 function displaySize(){
 
     let parent = document.querySelector('.menu');
