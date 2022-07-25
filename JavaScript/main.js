@@ -499,14 +499,14 @@ function displaySize(){
             }
             
         }
-
-function popUpForm(){
-    let popUpButton = document.querySelectorAll('.popUpFade');
-    let popUpForm = document.querySelector('.popUpForm');
-    for(elem of popUpButton){
-        elem.addEventListener('.click', function(){
-            popUpForm.classList.toggle('popUpFormActive');
-        })
-    }
-
-}
+        let myMap;
+        ymaps.ready(init);
+        function init () {
+            myMap = new ymaps.Map('mapShops', {
+                center: [55.782860, 37.669178],
+                zoom: 18
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+            
+        }
