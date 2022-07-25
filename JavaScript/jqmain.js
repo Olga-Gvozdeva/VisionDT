@@ -12,7 +12,25 @@ $(function(){
     openHamb();
 
     if($('.previous').length) slidebar('.previous','.next','.sliderItem');
+    if($('#mapShops').length) $(function(){
+        let myMap;
+        ymaps.ready(init);
+        function init () {
+            myMap = new ymaps.Map('mapShops', {
+                center: [55.782890, 37.669178],
+                zoom: 13,
+            });
+            
+            let myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                
+    }, {
+        preset: 'islands#blackAutoCircleIcon'
+    });
+        
+            myMap.geoObjects.add(myPlacemark);
+        }
 
+    })
 
     $('.item').magnificPopup({
         type: 'image',
