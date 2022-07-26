@@ -150,7 +150,7 @@ footer section:last-of-type{
 
 
 }
-
+/*
 @media screen and (max-width: 600px) {
     .openaccmf::after{
         content: '';
@@ -158,3 +158,4 @@ footer section:last-of-type{
 }
 
 
+*/
