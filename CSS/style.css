@@ -69,7 +69,7 @@ h4{
 }
 
 header{
-    position: fixed;
+    /*position: fixed;*/
     background-color: black;
     box-shadow: 5px 10px 20px #b5af86;
     width: 100%;
@@ -84,6 +84,8 @@ header{
 }
 
 .headerContainer{
+    position: sticky;
+    top: 0;
     display: flex;
     flex-flow: row nowrap;
     box-sizing: border-box;
