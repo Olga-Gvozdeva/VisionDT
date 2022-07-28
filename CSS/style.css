@@ -69,7 +69,7 @@ h4{
 }
 
 header{
-    /*position: fixed;*/
+    position: relative;
     background-color: black;
     box-shadow: 5px 10px 20px #b5af86;
     width: 100%;
@@ -79,13 +79,14 @@ header{
 }
 
 .hiddentop{
+    position: fixed;
+    left: 0;
+    top: 0;
     opacity: 1;
     transition: opacity 2s;
 }
 
 .headerContainer{
-    position: sticky;
-    top: 0;
     display: flex;
     flex-flow: row nowrap;
     box-sizing: border-box;
@@ -206,7 +207,7 @@ main{
 }
 
 .mainContainer{
-    margin: 140px auto 30px;
+    margin: 22px auto 30px;
 
 }
 

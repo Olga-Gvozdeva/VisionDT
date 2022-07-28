@@ -1,10 +1,18 @@
 $(function(){
 
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 0){
-            $('header').addClass('hiddentop');
-        }else{
-            $('header').removeClass('hiddentop');
+    let header = $('header');
+    let hederHeight = header.height(); 
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 1) {
+         header.addClass('hiddentop');
+         $('body').css({
+            'paddingTop': hederHeight+'px'
+         });
+        } else {
+         header.removeClass('hiddentop');
+         $('body').css({
+          'paddingTop': 0
+         })
         }
     });
 
