@@ -39,25 +39,25 @@
          <div class="form">
             <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="orderform">
                 <fieldset>
-                    <legend>Customer Detail:</legend>
+                    <legend>Данные клиента:</legend>
                     
-                    <input type="text" name="name" id="name" placeholder="Name" class="inputforma">
+                    <input type="text" name="name" id="name" placeholder="Имя" class="inputforma">
                     
-                    <input type="text" name="phone" id="phone" placeholder="Phone" class="inputforma">
+                    <input type="text" name="phone" id="phone" placeholder="Мобильный телефон" class="inputforma">
                     
-                    <input type="text" name="mail" id="mail" placeholder="Email" class="inputforma">
+                    <input type="text" name="mail" id="mail" placeholder="Электронная почта" class="inputforma">
                     
-                    <textarea name="comment" id="comment"></textarea>
+                    <textarea name="comment" id="Комментарий к записи"></textarea>
                 </fieldset>
                 
                 <fieldset>
-                    <legend>Delivery Date:</legend>
+                    <legend>Дата посещения:</legend>
                     
-                    <input type="text" name="date" id="date" placeholder="DD-MM-YYYY" autocomplete="off">
+                    <input type="text" name="date" id="date" placeholder="ДД-ММ-ГГГГ" autocomplete="off">
                 </fieldset>
                     
-                <button type="submit" class="sendform">Order</button>
-                <button type="submit" class="closePop">Close</button>
+                <button type="submit" class="sendform">Записаться</button>
+                <button type="button" class="closePop">Закрыть</button>
             </form>
         </div>
       </div>
@@ -73,7 +73,7 @@
                 <img src="Img/agent-j-F6romjSOMRU-unsplash.jpg" class="imgsize" alt="1pic">
             </div>
 
-            <div class="sliderItem">
+            <div class="sliderItem popUpopn">
                <a href="#" class="salesInfo">
                   <h3>НАНЕСЕНИЕ КЕРАМИЧЕСКОГО ПОКРЫТИЯ</h3>
                   <p>ОТ 12,000 ₽</p>
@@ -81,7 +81,7 @@
                <img src="Img/deniz-demirci-dlJelFmdpOc-unsplash.jpg" class="imgsize" alt="4pic">
            </div>
 
-            <div class="sliderItem">
+            <div class="sliderItem popUpopn">
                <a href="#" class="salesInfo">
                   <h3>КОМПЛЕКСНАЯ ХИМЧИСТКА САЛОНА</h3>
                   <p>ОТ 16,000 ₽</p>
@@ -90,7 +90,7 @@
             </div>
 
             <div class="sliderItem">
-               <a href="#" class="salesInfo">
+               <a href="#" class="salesInfo popUpopn">
                   <h3>ВОССТАНОВИТЕЛЬНАЯ ПОЛИРОВКА КУЗОВА</h3>
                   <p>ОТ 19,000 ₽</p>
                </a>
@@ -149,7 +149,7 @@
              <div class="footerCont">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                      <div class="footerButton">
-                  <button type="button">Связаться с нами</button>
+                  <button type="button" class="popUpopn">Связаться с нами</button>
                      </div>
              </div>
      </section>

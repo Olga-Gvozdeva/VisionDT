@@ -502,8 +502,9 @@ function displaySize(){
 
         function popUp(){
            let popUp = document.querySelector(".popUp");
-           let buttonPop = document.querySelector('.popUpopn');
-           buttonPop.addEventListener('click', function(){
+           let buttonPop = document.querySelectorAll('.popUpopn');
+           for(elem of buttonPop){
+           elem.addEventListener('click', function(){
             popUp.classList.add('popUpOpn');
            })
            let closePop = document.querySelector('.closePop');
@@ -511,3 +512,4 @@ function displaySize(){
             popUp.classList.remove('popUpOpn');
            })
         }
+    }
