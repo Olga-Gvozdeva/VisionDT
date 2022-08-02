@@ -55,8 +55,6 @@ p{
     top: 120px;
 
 }
-
-}
     
 .mainContainer section:first-child{
     padding: 0;
@@ -82,10 +80,6 @@ p{
 
 .salesInfo h3 {
     font-size: 16px;
-}
-
-.salesInfo{
-    width: 100%;
 }
 
 h1 ~ p{
@@ -157,12 +151,16 @@ footer section:last-of-type{
 
 }
 
-
 }
+
 
 @media screen and (max-width: 600px) {
     .openaccmf::after{
         content: '';
+    }
+
+    .salesInfo{
+        width: 100%;
     }
 }
 
