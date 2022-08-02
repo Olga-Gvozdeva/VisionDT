@@ -35,11 +35,37 @@
    </header>
 
    <main>
+      <div class="popUp">
+         <div class="form">
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="orderform">
+                <fieldset>
+                    <legend>Customer Detail:</legend>
+                    
+                    <input type="text" name="name" id="name" placeholder="Name" class="inputforma">
+                    
+                    <input type="text" name="phone" id="phone" placeholder="Phone" class="inputforma">
+                    
+                    <input type="text" name="mail" id="mail" placeholder="Email" class="inputforma">
+                    
+                    <textarea name="comment" id="comment"></textarea>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Delivery Date:</legend>
+                    
+                    <input type="text" name="date" id="date" placeholder="DD-MM-YYYY" autocomplete="off">
+                </fieldset>
+                    
+                <button type="submit" class="sendform">Order</button>
+                <button type="submit" class="closePop">Close</button>
+            </form>
+        </div>
+      </div>
       <div class="mainContainer">
          <section>
             <aside class="slider">
 
-            <div class="sliderItem">
+            <div class="sliderItem popUpopn">
                <a href="#" class="salesInfo">
                      <h3>ДЕТЕЙЛИНГ МОЙКА КУЗОВА АВТОМОБИЛЯ</h3>
                      <p>ОТ 1,500 ₽</p>

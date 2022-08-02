@@ -500,4 +500,14 @@ function displaySize(){
             
         }
 
-        
+        function popUp(){
+           let popUp = document.querySelector(".popUp");
+           let buttonPop = document.querySelector('.popUpopn');
+           buttonPop.addEventListener('click', function(){
+            popUp.classList.add('popUpOpn');
+           })
+           let closePop = document.querySelector('.closePop');
+           closePop.addEventListener('click', function(){
+            popUp.classList.remove('popUpOpn');
+           })
+        }
